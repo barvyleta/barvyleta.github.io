@@ -1,0 +1,164 @@
+body{
+    color:black;
+    font-size:12px;
+    background-image:url(Images/kensington-street.jpg);
+    background-repeat: repeat-x repeat-y;
+    background-size:cover;
+    background-attachment: fixed;
+    background-color:burlywood;
+}
+
+h3{
+    font-size:calc(5px + 2vw);
+    display:inline-flex;
+    line-height:1vw;
+}
+
+h4{
+    font-size:calc(5px + 1.5vw);
+}
+
+img{
+    max-height: 100%;
+    max-width:100%;
+}
+
+dt{
+    font-size:calc(5px + 1.5vw);
+}
+
+dd{
+    margin-left:20px;
+    font-size:calc(3px + 1.5vw);
+}
+
+.nav-bar{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    display:flex;
+    align-items: flex-end;
+    z-index: 1000;
+    background-image: url(/Images/kensington-street.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    box-shadow: 0px 5px 20px black;
+}
+
+.header{
+    font-family:"Alex Brush", cursive;
+    font-size:72px;
+    float:left;
+    margin: 10px 0px 25px 10px;
+    text-shadow: 
+        1.35px 1.35px black,
+        1.35px -1.35px black,
+        -1.35px 1.35px black,
+        -1.35px -1.35px black;
+    color:/*#7777FF,*/ white;
+}
+
+.buttons{
+    display:flex;
+    position:absolute;
+    right:0px;
+}
+
+.nav-button{
+    text-decoration:none;
+    transition-duration: 0.3s;
+    color:white;
+    border-radius: 20px;
+    padding:5px 15px 3px 15px;
+    margin:0.5vw;
+    font-size: 16px;
+    text-shadow: 
+        0.75px 0.75px black,
+        0.75px -0.75px black,
+        -0.75px 0.75px black,
+        -0.75px -0.75px black;
+}
+
+.nav-button:hover{
+    background-color:#7777FF;
+    text-decoration:none;
+    border-radius: 20px;
+    color:white;
+}
+
+.top-div{
+    display:flex;
+    margin:20px;
+    padding:20px;
+    background-color:rgba(183, 202, 255, 0.8);
+    color:black;
+    overflow:auto;
+}
+
+.reg-div{
+    display:flex;
+    margin:20px;
+    padding:20px;
+    background-color:rgba(183, 202, 255, 0.8);
+    color:black;
+    overflow:auto;
+    box-shadow: 0px 3px 10px black;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+    margin-left:1em;
+}
+
+.small-col{
+    display:block;
+    width:30%;
+}
+
+.big-col{
+    display:block;
+    width:calc(70% - 1em);
+}
+
+.bumper{
+    margin-top:115px;
+}
+
+.anchor{
+    padding-top: 115px;
+    margin-top: -115px;
+    visibility:hidden;
+}
+
+#recent{
+
+}
+
+#board-arc{
+    
+}
+
+#financial{
+    
+}
+
+#photos{
+    
+}
+
+#events{
+    
+}
+
+#downloads{
+    
+}
+
+#contact{
+    
+}

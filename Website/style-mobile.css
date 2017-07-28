@@ -1,0 +1,26 @@
+.nav-bar{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    display:flex;
+    align-items: flex-end;
+    background-color:#b7caff;
+    z-index: 1000;
+    background-image: url(/Images/maple.jpg);
+    background-size: cover;
+    box-shadow: -2px 3px 20px black;
+}
+
+.header{
+    font-family:"Alex Brush", cursive;
+    font-size:64px;
+    display:flex;
+    margin: 10px 0px 25px 10px;
+    text-shadow: 
+        1.25px 1.25px black,
+        1.25px -1.25px black,
+        -1.25px 1.25px black,
+        -1.25px -1.25px black;
+    color:white;
+}
