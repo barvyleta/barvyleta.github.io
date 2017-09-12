@@ -1,78 +1,313 @@
-body{
-    color:black;
-    font-size:12px;
-    background-image:url(Images/kensington-street.jpg);
-    background-repeat: repeat-x repeat-y;
-    background-size:cover;
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*~~~~~~~~~~~~~~~~MY STYLING~~~~~~~~~~~~~~~*/
+
+
+/*This is testing on getting the footer to behave properly*/
+/*html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}*/
+
+body {
+    color: black;
+    font-size: 12px;
+    font-family: "Archivo", sans-serif;
+    background-image: url(img/kensington-street.jpg);
+    background-size: cover;
     background-attachment: fixed;
-    background-color:burlywood;
+    background-color: skyblue;
 }
 
-h3{
-    font-size:calc(5px + 2vw);
-    display:inline-flex;
-    line-height:1vw;
-}
-
-h4{
-    font-size:calc(5px + 1.5vw);
-}
-
-img{
-    max-height: 100%;
-    max-width:100%;
-}
-
-dt{
-    font-size:calc(5px + 1.5vw);
-}
-
-dd{
-    margin-left:20px;
-    font-size:calc(3px + 1.5vw);
-}
-
-.nav-bar{
-    position:fixed;
-    top:0px;
-    right:0px;
-    left:0px;
-    display:flex;
-    align-items: flex-end;
+header {
+    min-height: 114px;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
     z-index: 1000;
-    background-image: url(/Images/kensington-street.jpg);
+    background-image: url(img/kensington-street.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: 0px 0px;
-    box-shadow: 0px 5px 20px black;
+    box-shadow: 0px 0px 1px black;
 }
 
-.header{
-    font-family:"Alex Brush", cursive;
-    font-size:72px;
-    float:left;
-    margin: 10px 0px 25px 10px;
+header h1 {
+    font-family: "Alex Brush", cursive;
+    font-size: 64px;
+    margin: 15px 0px 0px 15px;
     text-shadow: 
         1.35px 1.35px black,
         1.35px -1.35px black,
         -1.35px 1.35px black,
         -1.35px -1.35px black;
-    color:/*#7777FF,*/ white;
+    color: white;
 }
 
-.buttons{
-    display:flex;
-    position:absolute;
-    right:0px;
+header h1 a {
+    text-decoration: none;
 }
 
-.nav-button{
-    text-decoration:none;
-    transition-duration: 0.3s;
-    color:white;
-    border-radius: 20px;
-    padding:5px 15px 3px 15px;
-    margin:0.5vw;
+header h1 a:visited {
+    color: white;
+}
+
+header .login-wrapper form, header .login-wrapper a {
+    float: right;
+}
+
+header .login-wrapper form input {
     font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-style: hidden;
+}
+
+header .login-wrapper form button {
+    text-decoration-line: underline;
+    font-family: inherit;
+    background-color: transparent;
+    border: 0px solid #888888;
+}
+
+header .login-wrapper form button:hover {
+    background-color: #4444FF;
+    border: 0px solid #4444FF;
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    float: right;
+}
+
+.nav-button {
+    text-decoration: none;
+    transition-duration: 0.3s;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px 3px 15px;
+    margin: 5px;
+    font-size: 16px;
+    text-shadow: 
+        0.75px 0.75px black,
+        0.75px -0.75px black,
+        -0.75px 0.75px black,
+        -0.75px -0.75px black;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #4444FF;
+    text-decoration: none;
+    border-radius: 20px;
+    color:white;
+}
+
+.divider {
+    float: right;
+    border-left: 10px solid #CCCCCC;
+}
+
+.bumper {
+    margin-top: 125px;
+}
+
+.reg-div {
+    display: block;
+    margin: 10px 15px;
+    padding: 20px;
+    background-color: rgba(183, 202, 255, 0.8);
+    color: black;
+    overflow: auto;
+    box-shadow: 0px 1px 3px black;
+}
+
+.no-login {
+    position: relative;
+    margin-top: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reg-div.no-login {
+    background-color: rgba(183, 202, 255, 0.8);
+    min-width: 215px;
+    width: 80vw;
+}
+
+.reg-div.no-login h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reg-div.no-login h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reg-div.no-login form {
+    width: 50vw;
+    min-width: 200px;
+    margin: auto auto;
+}
+
+.reg-div.no-login form input {
+    display: block;
+    width: inherit;
+    max-width: 300px;
+    height: 24px;
+    margin: 5px auto;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-style: hidden;
+}
+
+.reg-div.no-login form button {
+    display: block;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-decoration-line: underline;
+    font-family: inherit;
+    border: 0px solid #888888;
+    margin-top: 10px;
+}
+
+.reg-div.no-login form button:hover {
+    background-color: #AAAAAA;
+}
+
+div.reg-div h2 {
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 
+        1px 1px black,
+        1px -1px black,
+        -1px 1px black,
+        -1px -1px black;
+}
+
+div.reg-div p {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
     text-shadow: 
         0.75px 0.75px black,
         0.75px -0.75px black,
@@ -80,85 +315,262 @@ dd{
         -0.75px -0.75px black;
 }
 
-.nav-button:hover{
-    background-color:#7777FF;
-    text-decoration:none;
-    border-radius: 20px;
-    color:white;
+h3 {
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
 }
 
-.top-div{
-    display:flex;
-    margin:20px;
-    padding:20px;
-    background-color:rgba(183, 202, 255, 0.8);
-    color:black;
-    overflow:auto;
+h4 {
+    font-size: 1.25rem;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300
 }
 
-.reg-div{
-    display:flex;
-    margin:20px;
-    padding:20px;
-    background-color:rgba(183, 202, 255, 0.8);
-    color:black;
-    overflow:auto;
-    box-shadow: 0px 3px 10px black;
+h5 {
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
 }
 
-.left{
-    float:left;
+img {
+    max-width: 100%;
 }
 
-.right{
-    float:right;
-    margin-left:1em;
+dt {
+    font-size: 1.5rem;
 }
 
-.small-col{
-    display:block;
-    width:30%;
+dd {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 1.1rem;
 }
 
-.big-col{
-    display:block;
-    width:calc(70% - 1em);
+.indent {
+    margin-left: 20px;
 }
 
-.bumper{
-    margin-top:115px;
+.nav-bar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    /*align-items: flex-end;*/
+    z-index: 1000;
+    background-image: url(img/kensington-street.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px 0px;
+    box-shadow: 0px 0px 1px black;
 }
 
-.anchor{
-    padding-top: 115px;
-    margin-top: -115px;
-    visibility:hidden;
+.nav-login {
+    float: right;
 }
+
+#hide {
+    display: none;
+}
+
+#div-flex {
+    display: flex;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.small-col {
+    width: 30%;
+}
+
+.big-col {
+    width: calc(70% - 1em);
+}
+
+.anchor {
+    padding-top: 125px;
+    margin-top: -125px;
+    visibility: hidden;
+}
+
+.regbot {
+    display: none !important;
+}
+
+.reg-error.reg-div {
+    display: block;
+    text-align: center;
+    margin: 10px 20%;
+    padding: 10px;
+    background-color: rgba(183, 202, 255, 0.8);
+    color: black;
+    overflow: auto;
+    box-shadow: 0px 1px 3px black;
+}
+
+.reg-error.reg-div h4 {
+    text-decoration: underline;
+    text-decoration-skip: edges;
+}
+
+/*Is absolute the best solution?*/
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer div a {
+    margin: 0;
+    padding: 0;
+}
+
+footer div h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+footer div h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.split-col {
+    width: 33%;
+    margin: auto;
+}
+
+/*~~~~~~~~~Page tags for navigation~~~~~~~~~*/
 
 #recent{
-
 }
 
 #board-arc{
-    
 }
 
 #financial{
-    
 }
 
 #photos{
-    
 }
 
 #events{
-    
 }
 
 #downloads{
-    
 }
 
 #contact{
+}
+
+/*Smaller screens and scaling*/
+
+@media screen and (max-width:745px) {
+    header {
+        min-height: auto;
+    }
     
+    h3 {
+        font-size:24px;
+        margin:0px;
+        padding:0px;
+    }
+
+    h4 {
+        font-size:18px;
+        margin:0px;
+        padding:0px;
+    }
+
+    img {
+        max-width:100%;
+    }
+
+    dt {
+        font-size:16px;
+    }
+
+    dd {
+        margin-left:20px;
+        margin-bottom:5px;
+        font-size:1rem;
+    }
+    
+    .left {
+        float:none;
+    }
+    
+    .right {
+        float:none;
+    }
+    
+    .big-col {
+        width:100%;
+    }
+    
+    .small-col {
+        width:100%;
+    }
+    
+    #hide-small {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 674px) {
+    .reg-div.no-login h2 {
+        font-size: 28px;
+    }
+    
+    .reg-div.no-login p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bumper {
+        margin-top: 175px;
+    }
+    
+    header .login-wrapper form, header .login-wrapper a {
+        float: right;
+    }
+    
+    header .login-wrapper form input {
+        display: block;
+    }
+    
+    footer div h3 {
+        font-size: 20px;
+    }
+    
+    footer div h4 {
+        font-size: 16px;
+    }
+    
+    .no-login {
+        margin-top: 20vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    header h1 {
+        font-size: 36px;
+    }
+    
+    .bumper{
+        margin-top: 150px;
+    }
 }
