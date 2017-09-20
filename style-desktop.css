@@ -116,7 +116,12 @@ input, select {
   box-sizing: inherit;
 }*/
 
+html, body {
+    height: calc(100% - 125px);
+}
+
 body {
+    width: 100%;
     color: black;
     font-size: 12px;
     font-family: "Archivo", sans-serif;
@@ -160,6 +165,13 @@ header h1 a {
 
 header h1 a:visited {
     color: white;
+}
+
+header .login-issue {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 header .login-wrapper form, header .login-wrapper a {
@@ -215,18 +227,25 @@ header .login-wrapper form button:hover {
     color:white;
 }
 
-.divider {
-    float: right;
-    border-left: 10px solid #CCCCCC;
+.last-update {
+    color: white;
+    border-radius: 20px;
+    margin: 5px 15px 3px 15px;
+    font-size: 12px;
+    text-shadow: 
+        0.75px 0.75px black,
+        0.75px -0.75px black,
+        -0.75px 0.75px black,
+        -0.75px -0.75px black;
 }
 
 .bumper {
-    margin-top: 125px;
+    margin-top: 130px;
 }
 
 .reg-div {
     display: block;
-    margin: 10px 15px;
+    margin: 15px 15px;
     padding: 20px;
     background-color: rgba(183, 202, 255, 0.8);
     color: black;
@@ -315,6 +334,15 @@ div.reg-div p {
         -0.75px -0.75px black;
 }
 
+.trouble-login {
+    background-color: rgba(183, 202, 255, 0.8);
+    width: 331px;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+}
+
 h3 {
     font-size: 2rem;
     margin: 0px;
@@ -396,12 +424,6 @@ dd {
     width: calc(70% - 1em);
 }
 
-.anchor {
-    padding-top: 125px;
-    margin-top: -125px;
-    visibility: hidden;
-}
-
 .regbot {
     display: none !important;
 }
@@ -422,55 +444,13 @@ dd {
     text-decoration-skip: edges;
 }
 
-/*Is absolute the best solution?*/
-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-footer div a {
-    margin: 0;
-    padding: 0;
-}
-
-footer div h3 {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-footer div h4 {
-    font-size: 20px;
-    margin: 0;
+footer p {
+    font-size: 14px;
 }
 
 .split-col {
     width: 33%;
     margin: auto;
-}
-
-/*~~~~~~~~~Page tags for navigation~~~~~~~~~*/
-
-#recent{
-}
-
-#board-arc{
-}
-
-#financial{
-}
-
-#photos{
-}
-
-#events{
-}
-
-#downloads{
-}
-
-#contact{
 }
 
 /*Smaller screens and scaling*/
@@ -522,6 +502,10 @@ footer div h4 {
         width:100%;
     }
     
+    .split-col {
+        width: 100%;
+    }
+    
     #hide-small {
         display:none;
     }
@@ -537,7 +521,7 @@ footer div h4 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .bumper {
         margin-top: 175px;
     }

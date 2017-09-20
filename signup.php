@@ -27,7 +27,11 @@
             } else if ($_SERVER['QUERY_STRING'] === 'signup=success') {
                 echo "<div class='reg-error reg-div'><h4>User successfully registered!</h4></div>";
             }
-        ?>    
+        ?>
+    <div class="trouble-login">
+        <h4>Trouble logging in?</h4><br>
+        <p>E-mail: <a href="mailto:webmaster@kensingtongardenshillsboro.com">webmaster@kensingtongardenshillsboro.com</a></p>
+    </div>
 <?php
     include_once 'footer.php';
 ?>

@@ -45,14 +45,9 @@
                     <button class="nav-button" type="submit" name="submit">Logout</button>
                 </form>
             </div>
-            <div class="divider"></div>
-            <div id="hide-small" class="buttons">
-                <a class="nav-button" href="#recent">Recent</a>
-                <a class="nav-button" href="#board-arc">Board & ARC</a>
-                <a class="nav-button" href="#financial">Financial</a>
-                <a class="nav-button" href="#cc&rs">CC&Rs</a>
-                <a class="nav-button" href="#downloads">Downloads</a>
-                <a class="nav-button" href="#contact">Contact</a>
+            <div class="buttons">
+                <a class="nav-button" href="index.php">Home</a>
+                <a class="nav-button" href="downloads.php">Downloads</a>
             </div>
         <?php } else { ?>
             <div class="login-wrapper">
@@ -64,4 +59,5 @@
                 </form>
             </div>
         <?php }?>
+    <div class="last-update"><p>Site last updated:<br>Sept. 20, 2017</p></div>
 </header>
