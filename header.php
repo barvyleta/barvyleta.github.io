@@ -37,6 +37,8 @@
     
 <header>
     <h1><a href="index.php">Kensington Gardens</a></h1>
+    <p>Trouble logging in?<br/>
+    <a href="mailto:webmaster@kensingtongardenshillsboro.com">E-mail the webmaster</a></p>
 
         <?php
         if (isset($_SESSION['u_id'])) { ?>
@@ -45,7 +47,7 @@
                     <button class="nav-button" type="submit" name="submit">Logout</button>
                 </form>
             </div>
-            <div class="buttons">
+            <div id="hide-buttons" class="buttons">
                 <a class="nav-button" href="index.php">Home</a>
                 <a class="nav-button" href="downloads.php">Downloads</a>
             </div>
@@ -59,5 +61,4 @@
                 </form>
             </div>
         <?php }?>
-    <div class="last-update"><p>Site last updated:<br>Sept. 20, 2017</p></div>
 </header>

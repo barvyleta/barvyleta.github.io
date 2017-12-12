@@ -103,25 +103,7 @@ input, select {
 
 /*~~~~~~~~~~~~~~~~MY STYLING~~~~~~~~~~~~~~~*/
 
-
-/*This is testing on getting the footer to behave properly*/
-/*html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}*/
-
-html, body {
-    height: calc(100% - 125px);
-}
-
 body {
-    width: 100%;
     color: black;
     font-size: 12px;
     font-family: "Archivo", sans-serif;
@@ -132,10 +114,11 @@ body {
 }
 
 header {
-    min-height: 114px;
+    padding: 15px 15px 5px 15px;
+    min-height: auto;
     display: block;
     position: fixed;
-    width: 100%;
+    width: auto;
     top: 0px;
     right: 0px;
     left: 0px;
@@ -145,12 +128,13 @@ header {
     background-size: cover;
     background-position: 0px 0px;
     box-shadow: 0px 0px 1px black;
+    color: white;
 }
 
 header h1 {
     font-family: "Alex Brush", cursive;
     font-size: 64px;
-    margin: 15px 0px 0px 15px;
+    display: inline;
     text-shadow: 
         1.35px 1.35px black,
         1.35px -1.35px black,
@@ -167,11 +151,20 @@ header h1 a:visited {
     color: white;
 }
 
+header p {
+    float: right;
+}
+
 header .login-issue {
     display: block;
     position: absolute;
     right: 10px;
     top: 10px;
+}
+
+header div .login-wrapper {
+    float: right;
+    clear: both;
 }
 
 header .login-wrapper form, header .login-wrapper a {
@@ -180,8 +173,6 @@ header .login-wrapper form, header .login-wrapper a {
 
 header .login-wrapper form input {
     font-size: 16px;
-    margin-bottom: 5px;
-    margin-right: 5px;
     background-color: rgba(255, 255, 255, 0.8);
     border-style: hidden;
 }
@@ -210,7 +201,7 @@ header .login-wrapper form button:hover {
     color: white;
     border-radius: 20px;
     padding: 5px 15px 3px 15px;
-    margin: 5px;
+    margin: 0 5px 0 5px;
     font-size: 16px;
     text-shadow: 
         0.75px 0.75px black,
@@ -228,9 +219,10 @@ header .login-wrapper form button:hover {
 }
 
 .last-update {
+    position: relative;
+    top: 15px;
     color: white;
-    border-radius: 20px;
-    margin: 5px 15px 3px 15px;
+    margin: 15px 0 15px 15px;
     font-size: 12px;
     text-shadow: 
         0.75px 0.75px black,
@@ -239,8 +231,8 @@ header .login-wrapper form button:hover {
         -0.75px -0.75px black;
 }
 
-.bumper {
-    margin-top: 130px;
+.bumper-login {
+    margin-top: 131px;
 }
 
 .reg-div {
@@ -387,7 +379,6 @@ dd {
     right: 0px;
     left: 0px;
     display: flex;
-    /*align-items: flex-end;*/
     z-index: 1000;
     background-image: url(img/kensington-street.jpg);
     background-attachment: fixed;
@@ -456,9 +447,6 @@ footer p {
 /*Smaller screens and scaling*/
 
 @media screen and (max-width:745px) {
-    header {
-        min-height: auto;
-    }
     
     h3 {
         font-size:24px;
@@ -511,18 +499,12 @@ footer p {
     }
 }
 
-@media screen and (max-width: 674px) {
-    .reg-div.no-login h2 {
-        font-size: 28px;
+@media screen and (max-width: 700px) {
+    .bumper-login {
+        margin-top: 126px;
     }
     
-    .reg-div.no-login p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .bumper {
+    .bumper-logout {
         margin-top: 175px;
     }
     
@@ -549,12 +531,28 @@ footer p {
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 674px) {
+    .reg-div.no-login h2 {
+        font-size: 28px;
+    }
+    
+    .reg-div.no-login p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
     header h1 {
         font-size: 36px;
     }
     
-    .bumper{
-        margin-top: 150px;
+    .bumper-login{
+        margin-top: 96px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #hide-buttons {
+        display: none;
     }
 }

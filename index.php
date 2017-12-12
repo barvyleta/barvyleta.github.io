@@ -6,7 +6,7 @@
 <?php
 
     if (isset($_SESSION['u_id'])) {?>
-    <div class="bumper"></div>
+    <div class="bumper-login"></div>
         <div class="reg-div">
             <div id="hide-small" class="small-col">
                 <img class="left" src="img/beaver.jpg">
@@ -67,7 +67,7 @@
             </div>
     
 <?php } else {?>
-    <div class="bumper"></div>
+    <div class="bumper-logout"></div>
     <div class="reg-div no-login">
         <h2>Welcome to the Kensington Gardens HOA Homepage!</h2>
         <p>Please sign in above, or register an account to access neighborhood information</p>
