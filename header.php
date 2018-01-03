@@ -1,28 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body style="padding:0;margin:0">
-    
-<header>
-    <nav>
-        <div class="main-wrapper">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-            </ul>
-            <div class="nav-login">
-
-            </div>
-        </div>
-    </nav>
-</header>-->
-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~KENSINGTON GARDENS HOA HEADER BELOW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <?php
     session_start();
 ?><!DOCTYPE html>
@@ -32,7 +7,7 @@
     <title>Kensington Gardens Hillsboro HOA</title>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex+Brush|Archivo" />
-    <link rel="stylesheet" type="text/css" href="style-desktop.css?v=<?php echo time();?>" />
+    <link rel="stylesheet" type="text/css" href="style-desktop.css?v<?php include_once 'last-update.php';?>">
 </head>
     
 <header>
@@ -49,7 +24,9 @@
             </div>
             <div id="hide-buttons" class="buttons">
                 <a class="nav-button" href="index.php">Home</a>
-                <a class="nav-button" href="downloads.php">Downloads</a>
+                <?php if(isset($_SESSION['u_confirm'])) {?>
+                    <a class="nav-button" href="downloads.php">Downloads</a>
+                <?php }?>
             </div>
         <?php } else { ?>
             <div class="login-wrapper">

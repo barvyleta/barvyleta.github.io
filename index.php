@@ -13,7 +13,7 @@
             </div>
             <div class="big-col right">
                 <h3><b>Next HOA Meeting:</b></h3>
-                <h4 style="margin:5px 0px 0px 20px">Monday December 11, 2017 Room 119A, Century High School</h4>
+                <h4 style="margin:5px 0px 0px 20px">Monday January 22, 2018 Room 119A, Century High School @ 7 PM</h4>
 
                 <br>
 
@@ -22,7 +22,7 @@
                     <dd>-Voted for broadening ARC-allowed colors and light-fixtures</dd>
                     <dd>-Discussed Century High band practice hours</dd>
                     <dd>-Discussed Century Blvd landscaping at Kensington</dd>
-                    <dd>-<a href=#none>Minutes</a> from last meeting (Coming soon)</dd>
+                    <dd>-<a href="/downloads.php">Minutes</a> from last meeting</dd>
                     <dd>-Board is in contact with Hillsboro Parks and Recreation regarding flooding and beaver presence in green space</dd>
                 </dl>
             </div>
@@ -38,22 +38,16 @@
             </div>
         </div>
 
-        <?php if($_SESSION['u_confirm'] === 1) {?>
-            <div class="reg-div">
-                <h3>Financial Summaries</h3>
-            </div>
-        <?php }?>
-    
-            <div id="hide" class="reg-div">
-                <h3>CC&R Information</h3>
-            </div>
-
-            <div class="reg-div">
-                <h3>Downloads</h3><br>
-                <h4 class="indent">CC&R documents, bulletins, meeting minutes, etc.</h4><br>
+        <div class="reg-div">
+            <h3>Downloads</h3><br>
+            <?php if(isset($_SESSION['u_confirm'])) {?>
+                <h4 class="indent">CC&Rs, bulletins, meeting minutes, etc.</h4><br>
                 <h4 class="indent">Click <a href="downloads.php">here</a></h4>
-                <!--<h4 class="indent">(Coming Soon)</h4>-->
-            </div>
+            <?php } else {?>
+                <h4 class="indent">Downloads will be available once your account information has been reviewed</h4>
+            <?php }?>
+        </div>
+    
             <div class="reg-div">
                 <h3><b>Contact</b></h3>
                 <br>
@@ -76,7 +70,3 @@
 <?php
     include 'footer.php';
 ?>
-    <!--
-This is styling to center the div when not logged in:
-style=""
--->
