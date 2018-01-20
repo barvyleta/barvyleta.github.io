@@ -29,6 +29,13 @@
                     <dd><a target="_blank" href="../data/HOA-arch-approval-form.pdf">ARC Approval Form</a></dd>
                 </dl>
             </div>
+            <div class="split-col left">
+                <dl>
+                    <dt>HOA Forms</dt>
+                    <dd><a target="_blank" href="../data/Kensington-Gardens-HOA-Bylaws-and-CCRs.pdf">Bylaws and CC&Rs</a>
+                    </dd>
+                </dl>
+            </div>
         </div>
 <?php
     } else {
