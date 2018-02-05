@@ -15,14 +15,15 @@
             <input type="password" name="pwd" placeholder="Password">
             <input class="regbot" type="text" name="fax" value=""  tabindex="-1" autocomplete="off">
             <br><br>
+            <h4>Terms of use for the Kensington Gardens HOA website:</h4>
             <div id="termsbox">
                 <input type="checkbox" name="confirm1">
-                <h5>I agree that the above login information will solely be used by the homeowner(s) and/or resident(s) of the property associated with the name provided.</h5>
+                <h5>I agree that the above login information will solely be used by the homeowner(s) of the property associated with the name provided.</h5>
             </div>
             <br><br>
             <div id="termsbox">
                 <input type="checkbox" name="confirm2">
-                <h5>I agree that I will not share this login information with any outside parties, aside from other homeowners of or residents of my property, at the liability of the deeded owner(s) of the property.</h5>
+                <h5>I agree that I will not share this login information with any outside parties aside from other homeowners of the property associated with the name provided.</h5>
             </div>
             <br>
             <button type="submit" name="submit">Sign up</button>
