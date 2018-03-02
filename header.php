@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>Kensington Gardens Hillsboro HOA</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, height=device-height" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex+Brush|Archivo" />
     <link rel="stylesheet" type="text/css" href="style-desktop.css?v<?php include_once 'last-update.php';?>">
 </head>

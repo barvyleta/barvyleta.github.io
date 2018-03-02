@@ -156,6 +156,7 @@ header h1 a:visited {
 
 header p {
     float: right;
+    text-decoration: none;
 }
 
 header .login-issue {
@@ -222,16 +223,21 @@ header .login-wrapper form button:hover {
 }
 
 .last-update {
-    position: relative;
-    top: 15px;
+    /*position: relative;
+    bottom: calc(100% - 15px);
+    left: 15px;*/
     color: white;
-    margin: 15px 0 15px 15px;
-    font-size: 12px;
+    margin: 0 auto;
+    font-size: 15px;
     text-shadow: 
-        0.75px 0.75px black,
-        0.75px -0.75px black,
-        -0.75px 0.75px black,
-        -0.75px -0.75px black;
+        1px 1px black,
+        1px -1px black,
+        -1px 1px black,
+        -1px -1px black;
+}
+
+.last-update h5 {
+    margin: 15px;
 }
 
 .bumper-login {
@@ -372,7 +378,7 @@ dt {
 
 dd {
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 1.1rem;
 }
 
