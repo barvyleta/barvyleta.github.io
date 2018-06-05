@@ -33,7 +33,14 @@
                     <dd><a target="_blank" href="../data/Meeting-minutes/HOA-Minutes_Dec-2016.pdf">December 2016</a></dd>
                 </dl>
             </div>
-            
+
+            <div class="split-col left">
+                <dl>
+                    <dt>Newsletters</dt>
+                    <dd><a target="_blank" href="../data/Newsletters/Newsletter_Spr2018.pdf">Spring 2018</a></dd>
+                </dl>
+            </div>
+
             <div class="split-col left">
                 <dl>
                     <dt>Misc</dt>

@@ -563,7 +563,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 540px) {
     header h1 {
         font-size: 36px;
     }
@@ -573,7 +573,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
     #hide-buttons {
         display: none;
     }

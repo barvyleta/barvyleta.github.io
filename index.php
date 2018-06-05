@@ -9,11 +9,11 @@
     <div class="bumper-login"></div>
     <div class="reg-div">
         <div id="hide-small" class="small-col">
-            <img class="left" src="img/snow.jpg">
+            <img class="left" src="img/white-flower.jpg">
         </div>
         <div class="big-col right">
             <h3><b>Next HOA Meeting:</b></h3>
-            <h4 style="margin:5px 0px 0px 20px">Monday June 4, 2018 Room 119A, Century High School @ 7 PM</h4>
+            <h4 style="margin:5px 0px 0px 20px">Monday June 11, 2018 Room 119A, Century High School @ 7 PM</h4>
 
             <br>
 
@@ -30,6 +30,10 @@
     <div class="reg-div">
         <div class="big-col">
             <h3>Newsletter</h3>
+            <br>
+            <dl>
+                <dd><a target="_blank" href="../data/Newsletters/Newsletter_Spr2018.pdf">Click here for the latest newsletter</a></dd>
+            </dl>
             <br>
             <dl>
                 <dd>There have been instances of residents' garage doors being opened without their knowledge.</dd>
